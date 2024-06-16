@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+    <link rel="shortcut icon" href="./assets/images/lgo.png" type="image/svg+xml">
+
+    <style>
+        :root {
+            /**
+             * colors
+             */
+
+            --flourescent-blue: hsl(178, 100%, 49%);
+            --heliotrope-gray: hsl(253, 15%, 70%);
+            --russian-violet: hsl(252, 80%, 16%);
+            --dark-violet: hsl(252, 100%, 12%);
+            --space-cadet: hsl(247, 43%, 20%);
+            --blue-ryb: hsl(221, 100%, 50%);
+            --white: hsl(0, 0%, 100%);
+
+            --gradient: linear-gradient(to right, var(--flourescent-blue), var(--blue-ryb));
+
+            /**
+             * typography
+             */
+
+            --ff-josefin: 'Josefin sans', sans-serif;
+
+            --fs-1: 25px;
+            --fs-2: 18px;
+            --fs-3: 17px;
+            --fs-4: 15px;
+
+            --fw-500: 500;
+            --fw-700: 700;
+
+            /**
+             * transition
+             */
+
+            --transition: 0.25s ease-in-out;
+
+            /**
+             * spacing
+             */
+
+            --section-padding: 30px;
+        }
+
+        body {
+            background-color: var(--russian-violet);
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        } */
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            color: whitesmoke;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+       .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #search-input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #search-button {
+            padding: 10px 20px;
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        #search-button:hover {
+            background-color: #0056a0;
+        }
+
+       .playlist {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* Allows episodes to wrap to the next line */
+            justify-content: center; /* Center episodes horizontally */
+            align-content: center;
+        }
+
+       .episode {
+            font-size: 18px;
+            margin: 0;
+            padding: 3px 3px;
+            border-bottom: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            margin: 10px;
+            transition: 2s;
+            align-content: center;
+        }
+
+        /* Hover effect on episodes */
+       .episode:hover {
+            background-color: gold;
+            cursor: pointer;
+            transform: translate3d(10px);
+        }
+
+       .navbar {
+            background-color: none;
+            color: #fff;
+            padding-right: 110px;
+            text-align: right;
+        }
+
+       .navbar a {
+            text-decoration: none;
+            color: gold;
+            margin: 5px;
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        /* Add this CSS to your existing styles */
+       .episode-image {
+            width: 100%; /* 100% of the container width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+
+       .audio-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+      .play-button {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+      .play-button:hover {
+            background-color: #0056a0;
+        }
+
+      .pause-button {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+      .pause-button:hover {
+            background-color: #0056a0;
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+    <h1>Explore HUB Podcasts</h1>
+    <div class="navbar">
+        <a href="index.html" ><b>Back To Home</b></a>
+    </div>
+    <main>
+        <ul class="playlist">
+            <li class="episode">
+                <img src="./assets/images/pod4.png" alt="Episode 1" class="episode-image">
+                <div class="episode-info">
+                    <h2>Self Worth _ Moments (128)</h2>
+                    <p>Description of Episode 1.</p>
+                    <p>Release Date: March 10, 2023</p>
+                    <p>Duration: 10:09</p>
+                </div>
+                <div class="audio-controls">
+                    <button class="play-button">Play</button>
+                    <button class="pause-button">Pause</button>
+                    <audio controls>
+                        <source src="./assets/videos/Self Worth _ Moments (128).mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </li>
+
+            <li class="episode">
+                <img src="./assets/images/pod2.png" alt="Episode 02" class="episode-image">
+                <div class="episode-info">
+                    <h2>Episode 2 Title</h2>
+                    <p>Description of Episode 2.</p>
+                    <p>Release Date: February 15, 2023</p>
+                    <p>Duration: 25:30</p>
+                </div>
+                <div class="audio-controls">
+                    <button class="play-button">Play</button>
+                    <button class="pause-button">Pause</button>
+                    <audio controls>
+                        <source src="episode3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </li>
+
+            <li class="episode">
+                <img src="./assets/images/pod4.png" alt="Episode 03" class="episode-image">
+                <div class="episode-info">
+                    <h2>Episode 3 Title</h2>
+                    <p>Description of Episode 3.</p>
+                    <p>Release Date: March 10, 2023</p>
+                    <p>Duration: 35:15</p>
+                </div>
+                <div class="audio-controls">
+                    <button class="play-button">Play</button>
+                    <button class="pause-button">Pause</button>
+                    <audio controls>
+                        <source src="episode3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </li>
+
+            <!-- Add more episodes here -->
+        </ul>
+    </main>
+    <script>
+        // Add event listeners to play and pause buttons
+        const playButtons = document.querySelectorAll('.play-button');
+        const pauseButtons = document.querySelectorAll('.pause-button');
+        const audioElements = document.querySelectorAll('audio');
+
+        playButtons.forEach((playButton, index) => {
+            playButton.addEventListener('click', () => {
+                audioElements[index].play();
+            });
+        });
+
+        pauseButtons.forEach((pauseButton, index) => {
+            pauseButton.addEventListener('click', () => {
+                audioElements[index].pause();
+            });
+        });
+    </script>
+</body>
+</html>

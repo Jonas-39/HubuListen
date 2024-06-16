@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub U Listen </title>
+
+  <!-- 
+    - favicon link
+  -->
+  <link rel="shortcut icon" href="./assets/images/lgo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+   <script>
+    function goToMYTH() {
+      window.location.href = 'goToMYTH.html';
+    }
+  </script>
+
+  
+</head>
+
+<body id="top">
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="active" data-header>
+    <div class="container">
+
+      <!-- 
+        - overlay
+      -->
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/HULheader.png" alt="Micro logo">
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#hero" class="navbar-link">Home</a>
+          </li>
+
+           <li class="navbar-item">
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Host</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link">Contact</a>
+          </li>
+
+          <li class="navbar-item">
+            <a  href="#podcast" class="navbar-link" >Podcast</a>
+           
+          </li>
+
+        </ul>
+
+        <div class="navbar-actions">
+
+          <!--<button class="navbar-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>-->
+
+          <a href="home.php">
+  <button class="navbar-btn">
+    <ion-icon name="log-in-outline"></ion-icon>
+  </button>
+</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+          <img src="./assets/images/podcast-12.png" alt="Podcast" class="hero-title">
+
+          <p class="hero-text">
+            Dive into the world of music, inspiration, and stories with the exclusive podcast series of Artist Name, available only on Hub U Listen. Join us as we explore the journey, creative process, and unique insights from the artist behind the music.
+          </p>
+              <a class="button" href="#podcast" target="_blank" id="listen">Listen Now</a>
+             
+
+            <div class="btn-link-wrapper">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero-banner">#</div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PODCAST
+      -->
+
+      <section class="podcast" id="podcast">
+        <ul class="podcast-list">
+
+          <li>
+            <a href="indexplayer.html" onclick="goToMYTH()" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/PODCAST.png" alt="blank">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Skypodcast</time>
+
+                  <p class="pod-epi">Episodes: 08</p>
+                </div>
+
+                <h3 class="h3 card-title">Skypodcast</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="Banyopod.html" onclick="goToMYTH() " class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/BANYO PODCAST.png" alt="marc jonas">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Banyo Podcast</time>
+
+                  <p class="pod-epi">Episodes: 04</p>
+                </div>
+
+                <h3 class="h3 card-title">marc jonas</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="Banyopod.html" onclick="goToMYTH()" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/BANYO PODCAST.png" alt="marc jonas">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Banyo Podcast</time>
+
+                  <p class="pod-epi">Episodes: 01</p>
+                </div>
+
+                <h3 class="h3 card-title">marc jonas</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="indexplayer.html" onclick="goToMYTH()" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/PODCAST.png" alt="marc jonas">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Skypodcast</time>
+
+                  <p class="pod-epi">Episodes: 04</p>
+                </div>
+
+                <h3 class="h3 card-title">marc jonas</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="Banyopod.html" onclick="goToMYTH()" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/BANYO PODCAST.png" alt="marc jonas">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Banyo Podcast</time>
+
+                  <p class="pod-epi">Episodes: 04</p>
+                </div>
+
+                <h3 class="h3 card-title">marc jonas</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="indexplayer.html" onclick="goToMYTH()" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/PODCAST.png" alt="marc jonas">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Skypodcast</time>
+
+                  <p class="pod-epi">Episodes: 06</p>
+                </div>
+
+                <h3 class="h3 card-title">marc jonas</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="indexplayer.html" onclick="goToMYTH()" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/PODCAST.png" alt="marc jonas">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Skypodcast</time>
+
+                  <p class="pod-epi">Episodes: 07</p>
+                </div>
+
+                <h3 class="h3 card-title">marc jonas</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="Banyopod.html" onclick="goToMYTH()" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/BANYO PODCAST.png" alt="marc jonas">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Banyo Podcast</time>
+
+                  <p class="pod-epi">Episodes: 08</p>
+                </div>
+
+                <h3 class="h3 card-title">marc jonas</h3>
+              </div>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+      
+        <!-- #NEWSLETTER-->
+      
+
+      <section class="newsletter" id="about">
+        <div class="newsletter-card">
+          <!--
+          <div class="card-content">
+            <h3 class="h3 card-title">Sign Up For Our Newsletter. It’s Free!</h3>
+
+            <p class="card-text">
+             #
+            </p>
+          </div>
+
+          <form action="" class="card-form" data-form>
+            <input type="email" name="email_address" placeholder="Your Email Address" required class="input-field"
+              data-input>
+
+            <button type="submit" class="btn btn-primary" disabled data-submit>Subscribe</button>
+          </form>
+  -->
+        </div>
+      </section>
+      
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top" id="footer" >
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/podcast-13.png" alt="hub logo">
+          </a>
+
+          <p class="footer-text">
+            Join us as we explore the journey, creative process, and unique insights from the artist behind the music.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-link-title">Start A Conversation</p>
+          </li>
+
+          <li>
+            <a href="https://mail.google.com" class="footer-link">hubulistenpodcast0@gmail.com</a>
+          </li>
+
+         <li>
+            <a href="#" class="footer-link">+63 939 388 6498</a>
+          </li>
+
+        </ul>
+
+        <div class="social-list-box">
+
+          <p class="social-title">Follow Us On:</p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/hub.u.listen.podcast?mibextid=ZbWKwL" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fhubulistenpod%3Figsh%3DMXZ4eGRuYjlpdHg4dg%253D%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1SGYJ4oziAP08ZA75DaOAnl-u0tqcuHCpyQNFG50A-PE7QawDsCofShMs_aem_AT7LF1Sr5HF1P-NvnHxmUTPR3cQUaDawU1prOGGgKRxeInHgzgEhbwMorx2CplTr54nnWtdU4kV6UlaF0aTehZhx&h=AT2WfP5h5zNfRXSzL825jEFjz5MB_xfjDPZb8f6ykY22RfpBbTg2jDDaS9PnJU7DkhVm811Zjck4Uc8eyA8J5xIggD46P4yRTn0r7Y_Jd312yQjK6gDUlbJHikpY01mMxlLeGw" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhubu_listen" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 <a href="#">Hub U Listen</a> All Rights Reserved<br> 
+           DISCLAIMER: <br> The Hub U Listen Podcast is intended for educational purposes only. The content provided on this podcast is for general informational purposes and does not constitute professional advice. While we strive to ensure the information shared is accurate and up-to-date, we make no guarantees regarding its completeness or suitability for any particular purpose. Listeners should consult with qualified professionals for specific advice pertaining to their individual circumstances. The views and opinions expressed in this podcast are those of the hosts and guests and do not necessarily reflect the official policy or position of any other agency, organization, employer, or company.
+        </p>
+              </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
